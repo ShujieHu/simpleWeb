@@ -3,13 +3,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+Hello, {{ user.username|default:'Guest' }}!<br><br>
 
-<div style="text-align:left;">
+<div>
     {% if user.is_authenticated %}
-        <p>Hello, {{ user.username|default:'Guest' }}!<br><br></p>
         <a href="{% url 'logout' %}">Logout</a>
     {% else %}
-        <p>Hello, {{ user.username|default:'Guest' }}! Please log in to see full functionality<br><br></p>
         <a href="{% url 'login' %}">Login</a>
     {% endif %}
 </div>
