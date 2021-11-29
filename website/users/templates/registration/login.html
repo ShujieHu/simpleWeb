@@ -3,28 +3,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<<<<<<< HEAD
-<h2>Login</h2>
-=======
 <h2 style="font-size:medium;color:blueviolet">Login Session</h2>
->>>>>>> e468c19 (finish milestone2)
-
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Login">
 </form>
-<<<<<<< HEAD
-
-
-
-<a href="{% url 'dashboard' %}">Back to dashboard</a><br>
-<a href="{% url 'register' %}">Register</a>
-=======
 <div>
     <a href="{% url 'dashboard' %}">Back to dashboard</a><br>
     <a href="{% url 'register' %}">Register</a>
 </div>
->>>>>>> e468c19 (finish milestone2)
-
 {% endblock %}
