@@ -1,0 +1,16 @@
+<!--users/templates/incorrect_country.html-->
+
+{% extends 'dashboard.html' %}
+
+{% block content %}
+<h2>The country you previously submit cannot be found in the dataset.</h2>
+<h2>Please choose a different country to run SIR model</h2>
+<div>
+    <form action="/generate-report" method="post" >
+        {% csrf_token %}
+        <label for="country">Country</label>
+        <input id="country" type="text" name="country" value="{{ country_name }}">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+<!--users/templates/run_model.html-->
+
+{% extends 'dashboard.html' %}
+
+{% block content %}
+<h2>Please choose the country to run SIR model</h2>
+<div>
+    <form action="/generate-report" method="post" >
+        {% csrf_token %}
+        <label for="country">Country</label>
+        <input id="country" type="text" name="country" value="{{ country_name }}">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
