@@ -8,12 +8,9 @@ import requests
 import subprocess
 import os
 from .forms import CountryForm
-<<<<<<< HEAD
-=======
 import pandas as pd
 from django.template.response import TemplateResponse
 
->>>>>>> e468c19 (finish milestone2)
 
 
 def dashboard(request):
@@ -34,11 +31,7 @@ def register(request):
             return redirect(reverse("dashboard"))
 
 
-<<<<<<< HEAD
-def run_model(request):
-=======
 def run_model(request, template_name='run_model.html'):
->>>>>>> e468c19 (finish milestone2)
     # this should be POST request
     if request.method == 'POST':
         args = {'country': None}
@@ -48,17 +41,14 @@ def run_model(request, template_name='run_model.html'):
             # process the form
             country = form['country'].value()
             # First, we need to make sure that this input is valid or contained in the original dataset
-<<<<<<< HEAD
-            url = 'https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
-            resp = requests.get(url)
-            countryWithComa = ',' + country + ','
-            if countryWithComa in resp.text:
-                bashCmd = ['/Users/shujie/opt/anaconda3/bin/jupyter', 'nbconvert',
-                           '--allow-errors', '--to', 'html',
-=======
-            url1 = 'https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/'
-            url2 = 'csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
-            url = url1 + url2
+            # countryWithComa = ',' + country + ','
+            # if countryWithComa in resp.text:
+            #     bashCmd = ['/Users/shujie/opt/anaconda3/bin/jupyter', 'nbconvert',
+            #                '--allow-errors', '--to', 'html',
+
+            # url1 = 'https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/'
+            # url2 = 'csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
+            # url = url1 + url2
             url = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv'
             # resp = requests.get(url)
             # countryWithComa = ',' + country + ','
@@ -68,7 +58,6 @@ def run_model(request, template_name='run_model.html'):
             if country in countries:
                 bashCmd = ['/Users/shujie/opt/anaconda3/bin/jupyter',
                            'nbconvert', '--allow-errors', '--to', 'html',
->>>>>>> e468c19 (finish milestone2)
                            'da/analysis_world.ipynb', '--execute']
 
                 process = subprocess.Popen(
@@ -81,7 +70,6 @@ def run_model(request, template_name='run_model.html'):
             else:
                 print(f'country {country} is not in')
                 args['country'] = country
-                # render(request, 'run_model.html', {'form': form})
                 return TemplateResponse(request, template_name, args)
 
         else:
