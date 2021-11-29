@@ -56,6 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC594/project/simpleWeb/website/da'],
 =======
 <<<<<<< HEAD
@@ -64,6 +65,9 @@ TEMPLATES = [
         'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC699/project/app4/website/da'],
 >>>>>>> e468c19 (finish milestone2)
 >>>>>>> e018654 (resolve conflict)
+=======
+        'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC594/project/simpleWeb/website/da'],
+>>>>>>> bc2cc0d (Update settings.py)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
