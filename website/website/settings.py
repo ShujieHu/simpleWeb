@@ -55,7 +55,11 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': ['/Users/shujie/Documents/CPT_HU/Semester5/CISC695/project/app4/website/da'],
+=======
+        'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC699/project/app4/website/da'],
+>>>>>>> e468c19 (finish milestone2)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,8 +123,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+<<<<<<< HEAD
 STATIC_URL = '/static/'
 
+=======
+# STATIC_URL = '/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC699/project/app4/website/static/'
+STATIC_URL = '/static/'
+>>>>>>> e468c19 (finish milestone2)
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
