@@ -55,7 +55,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/shujie/Documents/CPT_HU/Semester5/CISC695/project/app4/website/da'],
+        'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC594/project/simpleWeb/website/da'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
