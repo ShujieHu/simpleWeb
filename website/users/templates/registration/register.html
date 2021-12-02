@@ -3,11 +3,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Register Account</h2>
-
+<h2 style="color:blueviolet;font-size: medium;">Please Register Account<br><br></h2>
 <form method="post">
     {% csrf_token %}
-    {{form}}
+    {{form.as_p}}
     <input type="submit" value="Register">
 </form>
 

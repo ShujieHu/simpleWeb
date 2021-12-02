@@ -3,7 +3,14 @@
 {% extends 'dashboard.html' %}
 
 {% block content %}
-<h2>Please choose the country to run SIR model</h2>
+{% block includes %}
+{% if country != null %}
+<h2 style="color:red">
+    Country of name "{{ country }}" could not be found in data source. 
+</h2>
+{% endif %}
+{% endblock includes %}
+<h2>Please choose a correct country's name to run SIR model</h2>
 <div>
     <form action="/generate-report" method="post" >
         {% csrf_token %}
