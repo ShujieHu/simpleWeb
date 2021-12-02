@@ -42,7 +42,7 @@ def run_model(request):
             resp = requests.get(url)
             countryWithComa = ',' + country + ','
             if countryWithComa in resp.text:
-                bashCmd = ['/Users/shujie/Documents/CPT_HU/Semester5/CISC695/project/app4/venv/bin/jupyter', 'nbconvert',
+                bashCmd = ['/Users/shujie/opt/anaconda3/bin/jupyter', 'nbconvert',
                            '--allow-errors', '--to', 'html',
                            'da/analysis_world.ipynb', '--execute']
 
