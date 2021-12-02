@@ -55,19 +55,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
-<<<<<<< HEAD
         'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC594/project/simpleWeb/website/da'],
-=======
-<<<<<<< HEAD
-        'DIRS': ['/Users/shujie/Documents/CPT_HU/Semester5/CISC695/project/app4/website/da'],
-=======
-        'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC699/project/app4/website/da'],
->>>>>>> e468c19 (finish milestone2)
->>>>>>> e018654 (resolve conflict)
-=======
-        'DIRS': ['/Users/shujie/Documents/Documents/CPT_HU/Semester6/CISC594/project/simpleWeb/website/da'],
->>>>>>> bc2cc0d (Update settings.py)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
