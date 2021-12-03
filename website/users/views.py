@@ -14,7 +14,6 @@ from django.core.exceptions import ValidationError
 
 
 
-
 def dashboard(request):
     return render(request, "dashboard.html")
 
