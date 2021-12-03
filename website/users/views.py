@@ -10,6 +10,7 @@ import os
 from .forms import CountryForm
 import pandas as pd
 from django.template.response import TemplateResponse
+from django.core.exceptions import ValidationError
 
 
 
@@ -29,6 +30,10 @@ def register(request):
             user = form.save()
             login(request, user)
             return redirect(reverse("dashboard"))
+        else:
+            print("form is not valid")
+            # raise ValidationError("password doesn't match what is required")
+            return render(request, "registration/register.html", {"form": CustomUserCreationForm})
 
 
 def run_model(request, template_name='run_model.html'):
