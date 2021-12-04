@@ -2,6 +2,7 @@
 ## This repo is for the dynamic analysis of spread of COVID 19 and use this project to study the software development life cycle, verification & validaton.
 
 ### Required packages for this project
+
 ```
 anaconda-client                    1.7.2
 anaconda-navigator                 2.0.3
@@ -265,5 +266,4 @@ zope.interface                     5.3.0
 ## How to start the applications?
 You just need to go the the top level folder website, and go to the directory where you see manage.py. Run the command `python manage.py runserver` to start your service.
 Then, simply open a browser and put `localhost:8000`, which will open the website for you.
-
 
